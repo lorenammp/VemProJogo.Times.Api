@@ -1,0 +1,11 @@
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\bin\Debug\net9.0\VemProJogo.Times.Domain.deps.json
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\bin\Debug\net9.0\VemProJogo.Times.Domain.dll
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\bin\Debug\net9.0\VemProJogo.Times.Domain.pdb
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\obj\Debug\net9.0\VemProJogo.Times.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\obj\Debug\net9.0\VemProJogo.Times.Domain.AssemblyInfoInputs.cache
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\obj\Debug\net9.0\VemProJogo.Times.Domain.AssemblyInfo.cs
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\obj\Debug\net9.0\VemProJogo.Times.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\obj\Debug\net9.0\VemProJogo.Times.Domain.dll
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\obj\Debug\net9.0\refint\VemProJogo.Times.Domain.dll
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\obj\Debug\net9.0\VemProJogo.Times.Domain.pdb
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Domain\obj\Debug\net9.0\ref\VemProJogo.Times.Domain.dll

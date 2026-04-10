@@ -1,0 +1,17 @@
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\bin\Debug\net9.0\VemProJogo.Times.Infrastructure.deps.json
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\bin\Debug\net9.0\VemProJogo.Times.Infrastructure.dll
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\bin\Debug\net9.0\VemProJogo.Times.Infrastructure.pdb
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\bin\Debug\net9.0\VemProJogo.Times.Application.dll
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\bin\Debug\net9.0\VemProJogo.Times.Domain.dll
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\bin\Debug\net9.0\VemProJogo.Times.Domain.pdb
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\bin\Debug\net9.0\VemProJogo.Times.Application.pdb
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\obj\Debug\net9.0\VemProJogo.Times.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\obj\Debug\net9.0\VemProJogo.Times.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\obj\Debug\net9.0\VemProJogo.Times.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\obj\Debug\net9.0\VemProJogo.Times.Infrastructure.AssemblyInfo.cs
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\obj\Debug\net9.0\VemProJogo.Times.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\obj\Debug\net9.0\VemProJo.31DBCB1A.Up2Date
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\obj\Debug\net9.0\VemProJogo.Times.Infrastructure.dll
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\obj\Debug\net9.0\refint\VemProJogo.Times.Infrastructure.dll
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\obj\Debug\net9.0\VemProJogo.Times.Infrastructure.pdb
+C:\Users\Lorena\Documents\ADS\Puc Minas\Eixo4\Aula_API\VemProJogo.TimesService\VemProJogo.Times.Infrastructure\obj\Debug\net9.0\ref\VemProJogo.Times.Infrastructure.dll

@@ -1,0 +1,158 @@
+[
+  {
+    "ContainingType": "VemProJogo.Times.Api.Controllers.TimesController",
+    "Method": "Get",
+    "RelativePath": "api/Times",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[VemProJogo.Times.Application.DTOs.Times.TimeResponse, VemProJogo.Times.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VemProJogo.Times.Api.Controllers.TimesController",
+    "Method": "Post",
+    "RelativePath": "api/Times",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "VemProJogo.Times.Application.DTOs.Times.CreateTimeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "VemProJogo.Times.Application.DTOs.Times.TimeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VemProJogo.Times.Api.Controllers.TimesController",
+    "Method": "GetById",
+    "RelativePath": "api/Times/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "VemProJogo.Times.Application.DTOs.Times.TimeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VemProJogo.Times.Api.Controllers.TimesController",
+    "Method": "Put",
+    "RelativePath": "api/Times/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "VemProJogo.Times.Application.DTOs.Times.UpdateTimeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VemProJogo.Times.Api.Controllers.TimesController",
+    "Method": "Patch",
+    "RelativePath": "api/Times/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "VemProJogo.Times.Application.DTOs.Times.PatchTimeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VemProJogo.Times.Api.Controllers.TimesController",
+    "Method": "Delete",
+    "RelativePath": "api/Times/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VemProJogo.Times.Api.Controllers.TimesController",
+    "Method": "GetByChampionshipId",
+    "RelativePath": "api/Times/championship/{championshipId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "championshipId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[VemProJogo.Times.Application.DTOs.Times.TimeResponse, VemProJogo.Times.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
