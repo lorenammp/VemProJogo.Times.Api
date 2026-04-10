@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gd1T9gUvSS0=",
+  "dgSpecHash": "5LR8IGCixao=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\Aula_API\\VemProJogo.TimesService\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj",
+  "projectFilePath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lorena\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
   ],

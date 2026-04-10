@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\Aula_API\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj",
       "projectName": "VemProJogo.Times.Domain",
-      "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\Aula_API\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj",
+      "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj",
       "packagesPath": "C:\\Users\\Lorena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\Aula_API\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
