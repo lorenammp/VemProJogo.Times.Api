@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HPi8tktUMZA=",
+  "dgSpecHash": "cYk7Hc8JiDM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Api\\VemProJogo.Times.Api.csproj",
+  "projectFilePath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Api\\VemProJogo.Times.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lorena\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Lorena\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

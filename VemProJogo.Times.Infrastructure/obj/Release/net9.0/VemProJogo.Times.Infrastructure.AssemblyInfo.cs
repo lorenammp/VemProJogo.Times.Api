@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VemProJogo.Times.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+049e1270caccf66bd3fd92ab2b13728831202364")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1029995341125db892e2de6586ef52f43020d8da")]
 [assembly: System.Reflection.AssemblyProductAttribute("VemProJogo.Times.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VemProJogo.Times.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

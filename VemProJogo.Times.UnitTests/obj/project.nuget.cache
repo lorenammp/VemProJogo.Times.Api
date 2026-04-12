@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZBYQUK6xw1Y=",
+  "dgSpecHash": "S6behPCVu/I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.UnitTests\\VemProJogo.Times.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.UnitTests\\VemProJogo.Times.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lorena\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\Lorena\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",

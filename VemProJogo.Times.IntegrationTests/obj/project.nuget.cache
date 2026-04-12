@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bI8zGJc5ZKg=",
+  "dgSpecHash": "TnVnpeK6mhw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.IntegrationTests\\VemProJogo.Times.IntegrationTests.csproj",
+  "projectFilePath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.IntegrationTests\\VemProJogo.Times.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lorena\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\Lorena\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",

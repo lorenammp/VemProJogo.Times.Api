@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Api\\VemProJogo.Times.Api.csproj": {}
+    "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Api\\VemProJogo.Times.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Api\\VemProJogo.Times.Api.csproj": {
+    "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Api\\VemProJogo.Times.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Api\\VemProJogo.Times.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Api\\VemProJogo.Times.Api.csproj",
         "projectName": "VemProJogo.Times.Api",
-        "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Api\\VemProJogo.Times.Api.csproj",
+        "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Api\\VemProJogo.Times.Api.csproj",
         "packagesPath": "C:\\Users\\Lorena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Api\\obj\\",
+        "outputPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj": {
-                "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj"
+              "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj": {
+                "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj"
               },
-              "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Infrastructure\\VemProJogo.Times.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Infrastructure\\VemProJogo.Times.Infrastructure.csproj"
+              "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Infrastructure\\VemProJogo.Times.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Infrastructure\\VemProJogo.Times.Infrastructure.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj": {
+    "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj",
         "projectName": "VemProJogo.Times.Application",
-        "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj",
+        "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj",
         "packagesPath": "C:\\Users\\Lorena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Application\\obj\\",
+        "outputPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -113,8 +113,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj": {
-                "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj"
+              "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj": {
+                "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj"
               }
             }
           }
@@ -160,14 +160,14 @@
         }
       }
     },
-    "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj": {
+    "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj",
         "projectName": "VemProJogo.Times.Domain",
-        "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj",
+        "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj",
         "packagesPath": "C:\\Users\\Lorena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -225,14 +225,14 @@
         }
       }
     },
-    "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Infrastructure\\VemProJogo.Times.Infrastructure.csproj": {
+    "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Infrastructure\\VemProJogo.Times.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Infrastructure\\VemProJogo.Times.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Infrastructure\\VemProJogo.Times.Infrastructure.csproj",
         "projectName": "VemProJogo.Times.Infrastructure",
-        "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Infrastructure\\VemProJogo.Times.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Infrastructure\\VemProJogo.Times.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Lorena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -253,11 +253,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj": {
-                "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj"
+              "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj": {
+                "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Application\\VemProJogo.Times.Application.csproj"
               },
-              "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj": {
-                "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\VemProJogo.Times.Api\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj"
+              "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj": {
+                "projectPath": "C:\\Users\\Lorena\\Documents\\ADS\\Puc Minas\\Eixo4\\pmv-ads-2026-1-e4-proj-dad-t2-g13\\src\\Back-End\\Microsservicos\\VemProJogo.TimesService\\VemProJogo.Times.Domain\\VemProJogo.Times.Domain.csproj"
               }
             }
           }

@@ -10,6 +10,7 @@ public sealed class Time
     public string? ResponsibleContact { get; set; }
     public string? CrestUrl { get; set; }
     public bool Active { get; set; } = true;
+    public List<Jogador> Players { get; set; } = [];
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
 }
