@@ -1,5 +1,6 @@
 using VemProJogo.Times.Application;
 using VemProJogo.Times.Api.Middleware;
+using VemProJogo.Times.Api.Swagger;
 using VemProJogo.Times.Infrastructure;
 using VemProJogo.Times.Infrastructure.Persistence;
 
@@ -7,7 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SchemaFilter<CreateTimeRequestSchemaFilter>();
+});
 builder.Services.AddProblemDetails();
 builder.Services.AddHealthChecks();
 
