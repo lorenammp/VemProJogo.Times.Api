@@ -1,6 +1,8 @@
 using VemProJogo.Times.Application.Abstractions.Persistence;
 using VemProJogo.Times.Application.DTOs.Estatisticas;
 using VemProJogo.Times.Application.DTOs.Jogadores;
+using VemProJogo.Times.Application.DTOs.Times;
+using VemProJogo.Times.Application.Exceptions;
 using VemProJogo.Times.Application.Services;
 using VemProJogo.Times.Domain.Entities;
 
@@ -8,6 +10,73 @@ namespace VemProJogo.Times.UnitTests;
 
 public sealed class TimesServiceTests
 {
+    [Fact]
+    public async Task CreateAsync_DeveNormalizarCamposObrigatoriosEOpcionais()
+    {
+        var repository = new FakeTimesRepository(null);
+        var service = new TimesService(repository);
+
+        var response = await service.CreateAsync(new CreateTimeRequest
+        {
+            ChampionshipId = "507f1f77bcf86cd799439099",
+            Name = "  Time Azul  ",
+            Acronym = " ta ",
+            ResponsibleName = "  Joana  ",
+            ResponsibleContact = "  (31)99999-9999  ",
+            CrestUrl = "  https://time-azul.com/escudo.png  "
+        });
+
+        Assert.NotNull(repository.StoredTime);
+        Assert.Equal("Time Azul", repository.StoredTime!.Name);
+        Assert.Equal("TA", repository.StoredTime.Acronym);
+        Assert.Equal("Joana", repository.StoredTime.ResponsibleName);
+        Assert.Equal("(31)99999-9999", repository.StoredTime.ResponsibleContact);
+        Assert.Equal("https://time-azul.com/escudo.png", repository.StoredTime.CrestUrl);
+        Assert.True(response.Active);
+    }
+
+    [Fact]
+    public async Task CreateAsync_ComNameInvalido_DeveLancarBusinessValidationException()
+    {
+        var repository = new FakeTimesRepository(null);
+        var service = new TimesService(repository);
+
+        var action = async () => await service.CreateAsync(new CreateTimeRequest
+        {
+            ChampionshipId = "507f1f77bcf86cd799439099",
+            Name = "   "
+        });
+
+        await Assert.ThrowsAsync<BusinessValidationException>(action);
+    }
+
+    [Fact]
+    public async Task PatchAsync_SemCampos_DeveLancarBusinessValidationException()
+    {
+        var repository = new FakeTimesRepository(CreateTeam());
+        var service = new TimesService(repository);
+
+        var action = async () => await service.PatchAsync("507f1f77bcf86cd799439011", new PatchTimeRequest());
+
+        await Assert.ThrowsAsync<BusinessValidationException>(action);
+    }
+
+    [Fact]
+    public async Task UpdateAsync_TimeInexistente_DeveLancarResourceNotFoundException()
+    {
+        var repository = new FakeTimesRepository(null);
+        var service = new TimesService(repository);
+
+        var action = async () => await service.UpdateAsync("507f1f77bcf86cd799439011", new UpdateTimeRequest
+        {
+            ChampionshipId = "507f1f77bcf86cd799439099",
+            Name = "Time atualizado",
+            Active = true
+        });
+
+        await Assert.ThrowsAsync<ResourceNotFoundException>(action);
+    }
+
     [Fact]
     public async Task CreatePlayerAsync_DeveAssociarJogadorAoTime()
     {

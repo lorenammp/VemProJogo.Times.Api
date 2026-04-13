@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VemProJogo.Times.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1029995341125db892e2de6586ef52f43020d8da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2405511b831e4fbe6f71e88ac1f86f1bb1a85eb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("VemProJogo.Times.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VemProJogo.Times.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

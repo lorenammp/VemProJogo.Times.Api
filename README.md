@@ -17,6 +17,22 @@ O que esta entrega cobre:
 - registro, consulta, edicao e remocao de estatisticas individuais por partida
 - persistencia em MongoDB com documentos agregados por time
 
+## Arquitetura da solucao
+
+O microsservico segue uma separacao em camadas:
+
+- `VemProJogo.Times.Api`: contratos HTTP, controllers e middlewares
+- `VemProJogo.Times.Application`: casos de uso, DTOs, regras de negocio e interfaces
+- `VemProJogo.Times.Domain`: entidades e constantes de dominio
+- `VemProJogo.Times.Infrastructure`: persistencia MongoDB, indices e composicao de dependencias
+
+Melhorias recentes de robustez:
+
+- middleware global de excecoes retornando `ProblemDetails`
+- validacao de payload de `times` com DataAnnotations + regras de negocio
+- tratamento explicito de conflitos de chave unica no MongoDB
+- endpoint de saude `GET /health`
+
 ## Modelagem NoSQL
 
 O microsservico usa a colecao `times` e armazena os jogadores de forma embutida em cada documento de time.
@@ -78,6 +94,15 @@ Cada item de `matchStats[]` contem:
 | `POST` | `/api/times/{timeId}/jogadores/{playerId}/estatisticas` | Registra estatisticas por partida |
 | `PUT` | `/api/times/{timeId}/jogadores/{playerId}/estatisticas/{statId}` | Atualiza estatisticas registradas |
 | `DELETE` | `/api/times/{timeId}/jogadores/{playerId}/estatisticas/{statId}` | Remove estatisticas registradas |
+
+## Padrao de erros HTTP
+
+Quando ocorre falha de negocio ou validacao, a API retorna `application/problem+json`.
+
+- `400`: erro de validacao de entrada
+- `404`: recurso nao encontrado
+- `409`: conflito de negocio (ex.: duplicidade de time no mesmo campeonato)
+- `500`: erro interno inesperado
 
 ## Exemplo de payload para cadastro de times
 

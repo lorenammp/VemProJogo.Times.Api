@@ -1,5 +1,6 @@
 using MongoDB.Driver;
 using VemProJogo.Times.Application.Abstractions.Persistence;
+using VemProJogo.Times.Application.Exceptions;
 using VemProJogo.Times.Domain.Entities;
 
 namespace VemProJogo.Times.Infrastructure.Persistence.Repositories;
@@ -22,11 +23,29 @@ public sealed class TimesRepository : ITimesRepository
     public async Task<List<Time>> GetByChampionshipIdAsync(string championshipId) =>
         await _context.Times.Find(x => x.ChampionshipId == championshipId).ToListAsync();
 
-    public async Task CreateAsync(Time time) =>
-        await _context.Times.InsertOneAsync(time);
+    public async Task CreateAsync(Time time)
+    {
+        try
+        {
+            await _context.Times.InsertOneAsync(time);
+        }
+        catch (MongoWriteException ex) when (ex.WriteError?.Category == ServerErrorCategory.DuplicateKey)
+        {
+            throw new ConflictException("Ja existe um time com esse nome nesse campeonato.");
+        }
+    }
 
-    public async Task UpdateAsync(Time time) =>
-        await _context.Times.ReplaceOneAsync(x => x.Id == time.Id, time);
+    public async Task UpdateAsync(Time time)
+    {
+        try
+        {
+            await _context.Times.ReplaceOneAsync(x => x.Id == time.Id, time);
+        }
+        catch (MongoWriteException ex) when (ex.WriteError?.Category == ServerErrorCategory.DuplicateKey)
+        {
+            throw new ConflictException("Ja existe um time com esse nome nesse campeonato.");
+        }
+    }
 
     public async Task DeleteAsync(string id) =>
         await _context.Times.DeleteOneAsync(x => x.Id == id);

@@ -6,7 +6,7 @@ namespace VemProJogo.Times.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class TimesController : ControllerBase
+public sealed class TimesController : ControllerBase
 {
     private readonly ITimesService _timesService;
 
@@ -16,6 +16,7 @@ public class TimesController : ControllerBase
     }
 
     [HttpGet]
+    [ProducesResponseType(typeof(List<TimeResponse>), StatusCodes.Status200OK)]
     public async Task<ActionResult<List<TimeResponse>>> Get()
     {
         var result = await _timesService.GetAllAsync();
@@ -23,6 +24,8 @@ public class TimesController : ControllerBase
     }
 
     [HttpGet("{id:length(24)}")]
+    [ProducesResponseType(typeof(TimeResponse), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<TimeResponse>> GetById(string id)
     {
         var result = await _timesService.GetByIdAsync(id);
@@ -34,6 +37,7 @@ public class TimesController : ControllerBase
     }
 
     [HttpGet("championship/{championshipId:length(24)}")]
+    [ProducesResponseType(typeof(List<TimeResponse>), StatusCodes.Status200OK)]
     public async Task<ActionResult<List<TimeResponse>>> GetByChampionshipId(string championshipId)
     {
         var result = await _timesService.GetByChampionshipIdAsync(championshipId);
@@ -41,6 +45,9 @@ public class TimesController : ControllerBase
     }
 
     [HttpPost]
+    [ProducesResponseType(typeof(TimeResponse), StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)]
     public async Task<ActionResult<TimeResponse>> Post([FromBody] CreateTimeRequest request)
     {
         var created = await _timesService.CreateAsync(request);
@@ -48,6 +55,10 @@ public class TimesController : ControllerBase
     }
 
     [HttpPut("{id:length(24)}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)]
     public async Task<IActionResult> Put(string id, [FromBody] UpdateTimeRequest request)
     {
         await _timesService.UpdateAsync(id, request);
@@ -55,6 +66,10 @@ public class TimesController : ControllerBase
     }
 
     [HttpPatch("{id:length(24)}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status409Conflict)]
     public async Task<IActionResult> Patch(string id, [FromBody] PatchTimeRequest request)
     {
         await _timesService.PatchAsync(id, request);
@@ -62,6 +77,8 @@ public class TimesController : ControllerBase
     }
 
     [HttpDelete("{id:length(24)}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Delete(string id)
     {
         await _timesService.DeleteAsync(id);

@@ -3,6 +3,8 @@ using VemProJogo.Times.Application.Abstractions.Services;
 using VemProJogo.Times.Application.DTOs.Estatisticas;
 using VemProJogo.Times.Application.DTOs.Jogadores;
 using VemProJogo.Times.Application.DTOs.Times;
+using VemProJogo.Times.Application.Exceptions;
+using VemProJogo.Times.Application.Rules;
 using VemProJogo.Times.Domain.Entities;
 
 namespace VemProJogo.Times.Application.Services;
@@ -36,16 +38,17 @@ public sealed class TimesService : ITimesService
 
     public async Task<TimeResponse> CreateAsync(CreateTimeRequest request)
     {
+        var normalized = TimeBusinessRules.ValidateAndNormalizeForCreate(request);
         var now = DateTime.UtcNow;
 
         var time = new Time
         {
-            ChampionshipId = request.ChampionshipId,
-            Name = request.Name,
-            Acronym = request.Acronym,
-            ResponsibleName = request.ResponsibleName,
-            ResponsibleContact = request.ResponsibleContact,
-            CrestUrl = request.CrestUrl,
+            ChampionshipId = normalized.ChampionshipId,
+            Name = normalized.Name,
+            Acronym = normalized.Acronym,
+            ResponsibleName = normalized.ResponsibleName,
+            ResponsibleContact = normalized.ResponsibleContact,
+            CrestUrl = normalized.CrestUrl,
             Active = true,
             CreatedAt = now,
             UpdatedAt = now
@@ -57,17 +60,18 @@ public sealed class TimesService : ITimesService
 
     public async Task UpdateAsync(string id, UpdateTimeRequest request)
     {
+        var normalized = TimeBusinessRules.ValidateAndNormalizeForUpdate(request);
         var existing = await _timesRepository.GetByIdAsync(id);
 
         if (existing is null)
-            throw new KeyNotFoundException("Time não encontrado.");
+            throw new ResourceNotFoundException("Time nao encontrado.");
 
-        existing.ChampionshipId = request.ChampionshipId;
-        existing.Name = request.Name;
-        existing.Acronym = request.Acronym;
-        existing.ResponsibleName = request.ResponsibleName;
-        existing.ResponsibleContact = request.ResponsibleContact;
-        existing.CrestUrl = request.CrestUrl;
+        existing.ChampionshipId = normalized.ChampionshipId;
+        existing.Name = normalized.Name;
+        existing.Acronym = normalized.Acronym;
+        existing.ResponsibleName = normalized.ResponsibleName;
+        existing.ResponsibleContact = normalized.ResponsibleContact;
+        existing.CrestUrl = normalized.CrestUrl;
         existing.Active = request.Active;
         existing.UpdatedAt = DateTime.UtcNow;
 
@@ -76,31 +80,32 @@ public sealed class TimesService : ITimesService
 
     public async Task PatchAsync(string id, PatchTimeRequest request)
     {
+        var normalized = TimeBusinessRules.ValidateAndNormalizeForPatch(request);
         var existing = await _timesRepository.GetByIdAsync(id);
 
         if (existing is null)
-            throw new KeyNotFoundException("Time não encontrado.");
+            throw new ResourceNotFoundException("Time nao encontrado.");
 
-        if (request.ChampionshipId is not null)
-            existing.ChampionshipId = request.ChampionshipId;
+        if (normalized.HasChampionshipId)
+            existing.ChampionshipId = normalized.ChampionshipId!;
 
-        if (request.Name is not null)
-            existing.Name = request.Name;
+        if (normalized.HasName)
+            existing.Name = normalized.Name!;
 
-        if (request.Acronym is not null)
-            existing.Acronym = request.Acronym;
+        if (normalized.HasAcronym)
+            existing.Acronym = normalized.Acronym;
 
-        if (request.ResponsibleName is not null)
-            existing.ResponsibleName = request.ResponsibleName;
+        if (normalized.HasResponsibleName)
+            existing.ResponsibleName = normalized.ResponsibleName;
 
-        if (request.ResponsibleContact is not null)
-            existing.ResponsibleContact = request.ResponsibleContact;
+        if (normalized.HasResponsibleContact)
+            existing.ResponsibleContact = normalized.ResponsibleContact;
 
-        if (request.CrestUrl is not null)
-            existing.CrestUrl = request.CrestUrl;
+        if (normalized.HasCrestUrl)
+            existing.CrestUrl = normalized.CrestUrl;
 
-        if (request.Active.HasValue)
-            existing.Active = request.Active.Value;
+        if (normalized.HasActive)
+            existing.Active = normalized.Active!.Value;
 
         existing.UpdatedAt = DateTime.UtcNow;
 
@@ -112,7 +117,7 @@ public sealed class TimesService : ITimesService
         var existing = await _timesRepository.GetByIdAsync(id);
 
         if (existing is null)
-            throw new KeyNotFoundException("Time não encontrado.");
+            throw new ResourceNotFoundException("Time nao encontrado.");
 
         await _timesRepository.DeleteAsync(id);
     }
@@ -279,7 +284,7 @@ public sealed class TimesService : ITimesService
     {
         var time = await _timesRepository.GetByIdAsync(timeId);
 
-        return time ?? throw new KeyNotFoundException("Time nao encontrado.");
+        return time ?? throw new ResourceNotFoundException("Time nao encontrado.");
     }
 
     private static Jogador? FindPlayer(Time time, string playerId) =>
